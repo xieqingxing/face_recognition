@@ -20,6 +20,7 @@ while True:
         faces_list.append([x,y,x+w,y+w])
     for i in faces_list:
         res_face = frame[i[1]:i[3],i[0]:i[2]]
+
         image = cv2.GaussianBlur(res_face, (5,5), 0, 0)
         # 滤波
         image = cv2.bilateralFilter(image,30,60,15)
