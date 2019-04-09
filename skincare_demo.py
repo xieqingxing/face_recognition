@@ -19,6 +19,7 @@ start = cv2.getTickCount()
 image = cv2.imread('./skin_test.jpg')
 image = white_face(image)
 # 高斯模糊
+
 image = cv2.GaussianBlur(image, (5,5), 0, 0)
 # 滤波
 image = cv2.bilateralFilter(image,30,60,15)
