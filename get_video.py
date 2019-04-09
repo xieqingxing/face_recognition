@@ -19,6 +19,7 @@ while True:
     for(x,y,w,h) in faces:
         cv2.rectangle(frame,(x,y),(x+w,y+w),(0,255,0),2)
         faces_list.append([x,y,x+w,y+w])
+
     for i in faces_list:
         res_face = frame[i[1]:i[3],i[0]:i[2]]
 
