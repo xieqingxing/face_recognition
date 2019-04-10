@@ -21,6 +21,7 @@ def get_feature(image,db_path,facerec,sp):
                 return db_name.split('/')[-1]
     return 'others'
 
+
 if __name__ == '__main__':
 
     facerec = dlib.face_recognition_model_v1('./dlib_face_recognition_resnet_model_v1.dat')
